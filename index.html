@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Touch Alert App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Touch Alert App</h1>
+    
+    <div id="mainScreen">
+      <button id="startBtn">🔒 Activate Alert</button>
+      <p id="status">Status: Inactive</p>
+    </div>
+
+    <div id="passwordScreen" class="hidden">
+      <h3>Enter Password to Stop Alert</h3>
+      <input type="password" id="passwordInput" placeholder="Enter password" />
+      <button id="unlockBtn">Unlock</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+
+    <audio id="alarm" src="alarm.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
